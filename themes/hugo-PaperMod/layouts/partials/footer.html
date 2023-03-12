@@ -1,10 +1,8 @@
 {{- if not (.Param "hideFooter") }}
 <footer class="footer">
     {{- if .Site.Copyright }}
-    <span>
-        ## 修合無人見  存心有天知
-    </span>
-    <br>
+    
+  
     <span>{{ .Site.Copyright | markdownify }}</span>
     {{- else }}
     <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a></span>
@@ -14,6 +12,10 @@
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+    <br>
+    <span>
+        ## 修合無人見  存心有天知
     </span>
 </footer>
 {{- end }}
